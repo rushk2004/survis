@@ -2,7 +2,7 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'SurVis Literature Collection';
+var title = 'Type-2 Fuzzy Logic Systems: Literature Collection';
 
 /**
  * Relative path to the data directory
@@ -53,10 +53,7 @@ var editable = true;
  * Subtitle describing the paper the data is referring to (set to null to deactivate)
  * @type {{html: string, id: string}}
  */
-var paper = {
-    html: 'Sample literature collection for <b><a href="http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/eurovis14-star.pdf" target="_blank">SurVis</a></b>',
-    id: 'Beck2016Visual'
-};
+var paper = null;
 
 /**
  * Extra pages like an about page that will be listed in the footer an can be opened on demand (page name -> path)

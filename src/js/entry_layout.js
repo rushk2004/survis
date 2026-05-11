@@ -246,7 +246,7 @@ const entryLayout = (function () {
                 class: "title",
                 html: latexUtil.latexToHtml(entry["title"]),
                 target: '_blank',
-                href: bib.availablePdf.indexOf(id) >= 0 ? pdfFile : (entry['doi'] ? 'http://dx.doi.org/' + entry['doi'] : entry['url'])
+                href: bib.availablePdf.indexOf(id) >= 0 ? pdfFile : (entry['url'] ? entry['url'] : (entry['doi'] ? 'http://dx.doi.org/' + entry['doi'] : ''))
             });
         } else {
             return $("<div>", {
